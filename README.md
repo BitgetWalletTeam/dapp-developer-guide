@@ -5,8 +5,8 @@
 安装Bitget Wallet 钱包插件 https://web3.bitget.com/en/wallet-download
 
 1. 以桌面版 chrome 为例，也完全适用 Mobile App
-2. 以evm 链为例 https://web3.bitget.com/zh-CN/docs/provider-api/evm.html 
-3. Wallet API Demo https://github.com/BitgetWalletTeam/wallet-api-demo
+2. 以 evm 链为例 https://web3.bitget.com/zh-CN/docs/provider-api/evm.html 
+3. Wallet API Demo: https://github.com/BitgetWalletTeam/wallet-api-demo
 
 ## 基础介绍
 
@@ -38,7 +38,7 @@
 
 1. 获取 Bitget Logo，开发链接界面 https://github.com/bitkeepwallet/download/ ，建议即便用户没有钱包，也通过良好的寿命引导用户安装钱包
 2. 链接钱包
-3. 也可以使用三房钱包链接组件：https://github.com/BitgetWalletTeam/wallet-adapter-demo
+3. 也可以使用三方钱包链接组件：https://github.com/BitgetWalletTeam/wallet-adapter-demo
 4. [基于钱包实现免注册登录](./Login-by-wallet.md)
 
 ## 2. 主网
