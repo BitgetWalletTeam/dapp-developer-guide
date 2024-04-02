@@ -4,7 +4,7 @@
 
 安装Bitget Wallet 钱包插件 https://web3.bitget.com/en/wallet-download
 
-1. 以桌面版 chrome 为例
+1. 以桌面版 chrome 为例，也完全适用 Mobile App
 2. 以evm 链为例 https://web3.bitget.com/zh-CN/docs/provider-api/evm.html 
 3. Wallet API Demo https://github.com/BitgetWalletTeam/wallet-api-demo
 
