@@ -6,15 +6,41 @@
 
 1. 以桌面版 chrome 为例，也完全适用 Mobile App
 2. 以 evm 链为例 https://web3.bitget.com/zh-CN/docs/provider-api/evm.html 
-3. Wallet API Demo: https://github.com/BitgetWalletTeam/wallet-api-demo
+3. Wallet API Demo https://github.com/BitgetWalletTeam/wallet-api-demo
 
 ## 基础介绍
 
-插件钱包会在浏览器加载页面时在 `window` 挂载钱包对象（以下统一称作 `provider`），Bitget Wallet 注入的对象为 `window.bitkeep`，不同链基于  `window.bitkeep` 注册，具体细节参考官方文档 https://web3.bitget.com/zh-CN/docs/provider-api/evm.html。
+当浏览器加载页面时，插件钱包会在 `window` 挂载钱包对象（以下统一称作 `provider`），Bitget Wallet 注入的对象为 `window.bitkeep`，不同链基于  `window.bitkeep` 注册对应实现。
 
 比如 evm：`provider  = window.bitkeep.ethreum;` 反之也可以通过 `provider` 是否存在判断用户是否安装钱包插件。
 
+
+**Biget Wallet 目前支持 10 条链**：
+
+EVM https://web3.bitget.com/zh-CN/docs/provider-api/evm.html
+
+Bitcoin https://web3.bitget.com/zh-CN/docs/provider-api/btc.html
+
+Solana https://web3.bitget.com/zh-CN/docs/provider-api/solana.html
+
+Tron https://web3.bitget.com/zh-CN/docs/provider-api/tron.html
+
+Aptos https://web3.bitget.com/zh-CN/docs/provider-api/aptos.html
+
+Sui https://web3.bitget.com/zh-CN/docs/provider-api/sui.html
+
+Cosmos https://web3.bitget.com/zh-CN/docs/provider-api/cosmos.html
+
+Near https://web3.bitget.com/zh-CN/docs/provider-api/near.html
+
+Ton https://web3.bitget.com/zh-CN/docs/provider-api/ton.html
+
+Starknet https://web3.bitget.com/zh-CN/docs/provider-api/starknet.html
+
+
 ## 与钱包通讯
+
+> 请注意，因为链标准协议的差异，不同链的 provider 提供的方法和命名会存在一定差异。
 
 在页面中直接获取 provider 后即可调用相关 API，钱包常见的 API 有
 
