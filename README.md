@@ -15,27 +15,27 @@
 比如 evm：`provider  = window.bitkeep.ethreum;` 反之也可以通过 `provider` 是否存在判断用户是否安装钱包插件。
 
 
-**Biget Wallet 目前支持 10 条链**：
-
-EVM https://web3.bitget.com/zh-CN/docs/provider-api/evm.html
-
-Bitcoin https://web3.bitget.com/zh-CN/docs/provider-api/btc.html
-
-Solana https://web3.bitget.com/zh-CN/docs/provider-api/solana.html
-
-Tron https://web3.bitget.com/zh-CN/docs/provider-api/tron.html
+## Biget Wallet 目前支持 10 条链：
 
 Aptos https://web3.bitget.com/zh-CN/docs/provider-api/aptos.html
 
-Sui https://web3.bitget.com/zh-CN/docs/provider-api/sui.html
+Bitcoin https://web3.bitget.com/zh-CN/docs/provider-api/btc.html
 
 Cosmos https://web3.bitget.com/zh-CN/docs/provider-api/cosmos.html
 
+EVM https://web3.bitget.com/zh-CN/docs/provider-api/evm.html
+
 Near https://web3.bitget.com/zh-CN/docs/provider-api/near.html
+
+Solana https://web3.bitget.com/zh-CN/docs/provider-api/solana.html
+
+Starknet https://web3.bitget.com/zh-CN/docs/provider-api/starknet.html
+
+Sui https://web3.bitget.com/zh-CN/docs/provider-api/sui.html
 
 Ton https://web3.bitget.com/zh-CN/docs/provider-api/ton.html
 
-Starknet https://web3.bitget.com/zh-CN/docs/provider-api/starknet.html
+Tron https://web3.bitget.com/zh-CN/docs/provider-api/tron.html
 
 
 ## 与钱包通讯
@@ -60,17 +60,17 @@ Starknet https://web3.bitget.com/zh-CN/docs/provider-api/starknet.html
 ## DApp 链接钱包的基本思路
 
 ## 1. 通过 `provider` 链接钱包
-> 请注意，首先一定是链接钱包。
+> 请注意，**必须先链接钱包**。
 
-1. 获取 Bitget Logo，开发链接界面 https://github.com/bitkeepwallet/download/ ，建议即便用户没有钱包，也通过良好的寿命引导用户安装钱包
+1. 获取 Bitget Logo，开发链接界面 https://github.com/bitkeepwallet/download/ ，建议即便用户没有钱包，也通过良好的说明引导用户安装钱包
 2. 链接钱包
-3. 也可以使用三方钱包链接组件：https://github.com/BitgetWalletTeam/wallet-adapter-demo
+3. 使用三方钱包链接组件：https://github.com/BitgetWalletTeam/wallet-adapter-demo
 4. [基于钱包实现免注册登录](./Login-by-wallet.md)
 
 ## 2. 主网
 
 1. 获取当前主网，判断是否为目标主网
-2. 如果不是，切换至目标主网，切换失败则进行添加
+2. 如果不是，切换至目标主网，切换失败则进行添加（失败的原因基本上就是主网不存在）
 
 ## 3. 钱包账号
 
